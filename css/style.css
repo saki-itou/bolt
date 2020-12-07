@@ -1,0 +1,231 @@
+
+.wrapper.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* headerタグ */
+
+.header {
+  background-color: #fff;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+.header-inner {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 1100px;
+}
+
+.header-inner .fas {
+  color: #333;
+  padding: 15px 0;
+}
+
+.button {
+  background-color: #74cfae;
+  color: #fff;
+  font-size: 12px;
+  padding: 14px 12px;
+  text-align: center;
+}
+
+/* divタグ */
+
+.title {
+  background-color: #f2f2f2;
+  width: 100%;
+}
+
+.title-inner {
+  padding: 250px 0;
+  text-align: center;
+  margin: 0 auto;
+  width: 1100px;
+}
+
+.title-inner .heading {
+  font-size: 90px;
+  font-weight: 700;
+  color: #74cfae;
+  padding-bottom: 20px;
+}
+
+.title-inner .title-text {
+  font-size: 30px;
+  color: #c0c0c0;
+}
+
+/* sectionタグ*/
+
+.sec {
+  background-color: #74cfae;
+  width: 100%;
+}
+
+.sec-inner {
+  color: #fff;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  width: 1100px;
+}
+
+.sec-image {
+  padding: 50px;
+}
+
+.sec-inner-inner {
+  margin: auto;
+  text-align: center;
+}
+
+.sec-inner .sec-title {
+  font-size: 24px;
+}
+
+.sec-text {
+  font-size: 20px;
+  padding-top: 35px;
+}
+
+/* articleタグ */
+
+.art {
+  background-color: #f2f2f2;
+  width: 100%;
+}
+
+.art-title {
+  padding: 60px 0 40px 0;
+}
+
+.art-inner {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.art-title {
+  font-size: 24px;
+  padding-top: 60px;
+  text-align: center;
+}
+
+.art-img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.art-inner-img {
+  box-sizing: border-box;
+  margin: 0;
+  width: 33.3%;
+  margin: 0 100px 80px 0;
+  width: calc(33.3% - 100px);
+}
+
+.art-inner-img:nth-child(3n) {
+  margin-right: 0;
+}
+
+.art-inner-img:nth-child(n + 4) {
+  margin-bottom: 0;
+}
+
+.art-text-inner {
+  text-align: center;
+  padding: 90px 90px 70px 90px;
+}
+
+.art-button {
+  background-color: #74cfae;
+  color: #fff;
+  font-size: 12px;
+  padding: 14px 20px;
+  text-align: center;
+}
+
+.art-text {
+  align-items: center;
+  display: flex;
+  margin: 0 auto;
+}
+
+/* sectinタグ2 */
+
+.skill {
+  background-color: #4e4e4e;
+  width: 100%;
+}
+
+.skill-inner {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.skill-title {
+  color: #fff;
+  font-size: 24px;
+  padding-top: 70px;
+  text-align: center;
+}
+
+.skill-img {
+  display: flex;
+  margin: auto;
+}
+
+.skill-img-inner {
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  padding: 0 180px 100px 0;
+}
+
+/* navタグ*/
+
+.sns {
+  background-color: #f2f2f2;
+  width: 100%;
+  padding: 200px 0 200px 0;
+}
+
+.inner.sns-inner {
+  width: 1100px;
+  color: #74cfae;
+  margin: 0 auto;
+}
+
+.fab{
+  width: 185px;
+  text-align: center;
+}
+
+.fas {
+  width: 185px;
+  text-align: center;
+}
+
+/* footer */
+
+.footer {
+  background-color: #74cfae;
+  width: 100%;
+}
+
+.inner.footer-inner {
+  width: 1100px;
+  padding-top: 20px;
+  padding-bottom: 25px;
+}
+
+.footer-text {
+  color: #ffffff
+}
