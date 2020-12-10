@@ -16,19 +16,20 @@
   background-color: #fff;
   width: 100%;
   position: fixed;
-  top: 0;
+  padding-top: 0;
+  z-index: 1;
 }
 
 .header-inner {
   align-items: center;
   display: flex;
   justify-content: space-between;
+  padding: 15px 0;
 }
 
 .header-inner .fas {
   color: #333;
   font-size: 24px;
-  padding: 15px 0;
 }
 
 .button {
@@ -42,7 +43,11 @@
 .button:hover {
   cursor: pointer;
   color: #333;
-  transition-delay: 0.3s;
+  transition: 0.3s;
+}
+
+.main {
+  padding-top: 70px;
 }
 
 /* divタグ */
@@ -81,14 +86,11 @@
   color: #fff;
   display: flex;
   justify-content: space-between;
-}
-
-.sec-image {
-  padding: 50px;
+  padding-top: 50px;
 }
 
 .sec-inner-inner {
-  margin: auto;
+  margin: auto 0 ;
   text-align: center;
 }
 
@@ -109,13 +111,17 @@
   width: 100%;
 }
 
+.art-inner {
+  padding-top: 60px;
+  padding-bottom: 70px;
+}
+
 .art-title {
-  padding: 60px 0 40px 0;
+  padding-bottom: 40px;
 }
 
 .art-title {
   font-size: 24px;
-  padding-top: 60px;
   text-align: center;
 }
 
@@ -129,9 +135,7 @@
 .art-inner-img {
   box-sizing: border-box;
   margin: 0;
-  width: 33.3%;
   margin: 0 100px 80px 0;
-  width: calc(33.3% - 100px);
   opacity: 0.7;
 }
 
@@ -140,18 +144,18 @@
 }
 
 .art-inner-img:nth-child(n + 4) {
-  margin-bottom: 0;
+  margin-bottom: 90px;
 }
 
 .art-inner-img:hover {
   cursor: pointer;
-  transition-delay: 0.3s;
+  transition: 0.3s;
   opacity: 1.0;
 }
 
 .art-text-inner {
   text-align: center;
-  padding: 90px 90px 70px 90px;
+  padding: 0 90px;
 }
 
 .art-button {
@@ -165,13 +169,18 @@
 .art-button:hover {
   color: #333;
   cursor: pointer;
-  transition-delay: 0.3s;
+  transition: 0.3s;
 }
 
 .art-text {
   align-items: center;
   display: flex;
   margin: 0 auto;
+}
+
+.art-inner-img::before {
+  content: "";
+  z-index: 2;
 }
 
 
@@ -182,10 +191,14 @@
   width: 100%;
 }
 
+.skill-inner {
+  padding-top: 70px;
+  padding-bottom: 100px;
+}
+
 .skill-title {
   color: #fff;
   font-size: 24px;
-  padding-top: 70px;
   text-align: center;
 }
 
@@ -195,10 +208,11 @@
 }
 
 .skill-img-inner {
+  display: inline-block;
   text-align: center;
   color: #fff;
   font-size: 16px;
-  padding: 0 95px 100px 95px;
+  padding: 50px 95px 0;
   margin: 0 auto;
 }
 
@@ -220,21 +234,23 @@
 }
 
 .sns-inner {
-  color: #74cfae;
   display: flex;
   justify-content: center;
   padding: 200px 0 200px 0;
 }
 
 .sns-inner .fab, .sns-inner .fas {
+  color: #74cfae;
+  display: inline-block;
   width: 185px;
+  padding: 20px 0;
   text-align: center;
   font-size: 24px;
 }
 
 .sns-inner .fab:hover, .sns-inner .fas:hover {
   cursor: pointer;
-  transition-delay: 0.3s;
+  transition: 0.3s;
   background-color: #fff;
 }
 
