@@ -38,12 +38,13 @@
   font-size: 12px;
   padding: 14px 12px;
   text-align: center;
+  text-decoration: none;
+  transition: 0.3s ease;
 }
 
 .button:hover {
   cursor: pointer;
   color: #333;
-  transition: 0.3s;
 }
 
 .main {
@@ -66,12 +67,12 @@
   font-size: 90px;
   font-weight: 700;
   color: #74cfae;
-  padding-bottom: 20px;
 }
 
 .title-text {
   font-size: 30px;
   color: #c0c0c0;
+  margin-top: 20px;
 }
 
 
@@ -100,7 +101,7 @@
 
 .sec-text {
   font-size: 20px;
-  padding-top: 35px;
+  margin-top: 35px;
 }
 
 
@@ -117,10 +118,6 @@
 }
 
 .art-title {
-  padding-bottom: 40px;
-}
-
-.art-title {
   font-size: 24px;
   text-align: center;
 }
@@ -134,28 +131,42 @@
 
 .art-inner-img {
   box-sizing: border-box;
-  margin: 0;
-  margin: 0 100px 80px 0;
+  vertical-align: middle;
   opacity: 0.7;
+  text-decoration: none;
+  transition: 0.3s ease;
+  margin-top: 40px;
+  margin-left: 100px;
 }
 
-.art-inner-img:nth-child(3n) {
-  margin-right: 0;
+.art-inner-img:nth-child(1) {
+  margin-left: 0;
+}
+
+.art-inner-img:nth-last-child(3) {
+  margin-left: 0;
 }
 
 .art-inner-img:nth-child(n + 4) {
-  margin-bottom: 90px;
+  margin-top: 80px;
 }
 
 .art-inner-img:hover {
   cursor: pointer;
-  transition: 0.3s;
   opacity: 1.0;
 }
 
+.art-text {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  vertical-align: middle;
+  margin-top: 90px;
+}
+
 .art-text-inner {
+  width: 550px;
   text-align: center;
-  padding: 0 90px;
 }
 
 .art-button {
@@ -163,19 +174,15 @@
   color: #fff;
   font-size: 12px;
   padding: 14px 20px;
+  margin-left: 90px;
   text-align: center;
+  text-decoration: none;
+  transition: 0.3s ease;
 }
 
 .art-button:hover {
   color: #333;
   cursor: pointer;
-  transition: 0.3s;
-}
-
-.art-text {
-  align-items: center;
-  display: flex;
-  margin: 0 auto;
 }
 
 .art-inner-img::before {
@@ -205,6 +212,8 @@
 .skill-img {
   display: flex;
   margin: 0 auto;
+  margin-top: 50px;
+  justify-content: center;
 }
 
 .skill-img-inner {
@@ -212,16 +221,11 @@
   text-align: center;
   color: #fff;
   font-size: 16px;
-  padding: 50px 95px 0;
-  margin: 0 auto;
+  margin-left: 180px;
 }
 
 .skill-img-inner:first-child {
-  padding-left: 0px;
-}
-
-.skill-img-inner:last-child {
-  padding-right: 0px;
+  margin-left: 0px;
 }
 
 
@@ -246,11 +250,12 @@
   padding: 20px 0;
   text-align: center;
   font-size: 24px;
+  text-decoration: none;
+  transition: all 0.3s ease;
 }
 
 .sns-inner .fab:hover, .sns-inner .fas:hover {
   cursor: pointer;
-  transition: 0.3s;
   background-color: #fff;
 }
 
