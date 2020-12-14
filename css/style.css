@@ -29,7 +29,7 @@
 
 .header-inner .fas {
   color: #333;
-  font-size: 24px;
+  font-size: 30px;
 }
 
 .button {
@@ -90,8 +90,13 @@
   padding-top: 50px;
 }
 
+.sec-image {
+  text-align: center;
+  font-size: 0;
+}
+
 .sec-inner-inner {
-  margin: auto 0 ;
+  margin-top: 50px;
   text-align: center;
 }
 
@@ -126,7 +131,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
 }
 
 .art-inner-img {
@@ -160,12 +164,11 @@
   align-items: center;
   display: flex;
   justify-content: center;
-  vertical-align: middle;
   margin-top: 90px;
 }
 
 .art-text-inner {
-  width: 550px;
+  width: 530px;
   text-align: center;
 }
 
@@ -211,7 +214,6 @@
 
 .skill-img {
   display: flex;
-  margin: 0 auto;
   margin-top: 50px;
   justify-content: center;
 }
@@ -240,7 +242,7 @@
 .sns-inner {
   display: flex;
   justify-content: center;
-  padding: 200px 0 200px 0;
+  padding: 200px 0;
 }
 
 .sns-inner .fab, .sns-inner .fas {
@@ -249,7 +251,7 @@
   width: 185px;
   padding: 20px 0;
   text-align: center;
-  font-size: 24px;
+  font-size: 30px;
   text-decoration: none;
   transition: all 0.3s ease;
 }
