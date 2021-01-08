@@ -344,6 +344,7 @@ body {
   .art-text {
     display: block;
     margin-top: 80px;
+    text-align: center;
   }
 
   .art-text-inner {
@@ -351,10 +352,13 @@ body {
   }
 
   .art-button {
+    display: inline-block;
     margin-top: 40px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 0;
+    
   }
+
+
 
   .skill-img {
     display: block;
