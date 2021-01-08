@@ -1,3 +1,4 @@
+@charset "utf-8";
 
 body {
   font-family: 'Lato';
@@ -7,11 +8,18 @@ body {
   font-family: 'Raleway';
 }
 
+.is-button {
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
 .clearfix::after {
   content: "";
   display: block;
   clear: both;
 }
+
 
 .inner {
   width: 1100px;
@@ -37,7 +45,7 @@ body {
   padding: 15px 0;
 }
 
-.header-inner .fas {
+.header-inner .bolt {
   color: #333;
   font-size: 30px;
 }
@@ -48,12 +56,9 @@ body {
   font-size: 12px;
   padding: 14px 12px;
   text-align: center;
-  text-decoration: none;
-  transition: 0.3s ease;
 }
 
 .button:hover {
-  cursor: pointer;
   color: #333;
 }
 
@@ -106,7 +111,7 @@ body {
 }
 
 .sec-inner-inner {
-  margin-top: 50px;
+  padding-top: 50px;
   text-align: center;
 }
 
@@ -116,7 +121,7 @@ body {
 
 .sec-text {
   font-size: 20px;
-  padding-top: 35px;
+  margin-top: 35px;
 }
 
 
@@ -128,8 +133,7 @@ body {
 }
 
 .art-inner {
-  padding-top: 60px;
-  padding-bottom: 70px;
+  padding: 60px 0 70px;
 }
 
 .art-title {
@@ -141,28 +145,25 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: start;
+  margin-top: 40px;
 }
 
-.art-inner-img {
+.inner-list {
   box-sizing: border-box;
   vertical-align: middle;
   opacity: 0.7;
-  text-decoration: none;
-  transition: 0.3s ease;
-  margin-top: 40px;
   margin-left: 100px;
 }
 
-.art-inner-img:nth-child(3n + 1) {
+.inner-list:nth-child(3n + 1) {
   margin-left: 0;
 }
 
-.art-inner-img:nth-child(n + 4) {
+.inner-list:nth-child(n + 4) {
   margin-top: 80px;
 }
 
-.art-inner-img:hover {
-  cursor: pointer;
+.inner-list:hover {
   opacity: 1.0;
 }
 
@@ -186,13 +187,10 @@ body {
   padding: 14px 20px;
   margin-left: 90px;
   text-align: center;
-  text-decoration: none;
-  transition: 0.3s ease;
 }
 
 .art-button:hover {
   color: #333;
-  cursor: pointer;
 }
 
 .art-inner-img::before {
@@ -209,8 +207,7 @@ body {
 }
 
 .skill-inner {
-  padding-top: 70px;
-  padding-bottom: 100px;
+  padding: 70px 0 100px;
 }
 
 .skill-title {
@@ -256,19 +253,16 @@ body {
   padding: 200px 0;
 }
 
-.sns-inner .fab, .sns-inner .fas {
+.sns-inner .is-button {
   color: #74cfae;
   display: inline-block;
   width: 185px;
   padding: 20px 0;
   text-align: center;
   font-size: 30px;
-  text-decoration: none;
-  transition: all 0.3s ease;
 }
 
-.sns-inner .fab:hover, .sns-inner .fas:hover {
-  cursor: pointer;
+.sns-inner .is-button:hover {
   background-color: #fff;
 }
 
@@ -281,11 +275,124 @@ body {
 }
 
 .footer-inner {
-  padding-top: 20px;
-  padding-bottom: 25px;
+  padding: 20px 0 25px;
   text-align: right;
 }
 
 .footer-text {
   color: #ffffff
+}
+
+
+/* レスポンシブ */
+/* PC */
+
+@media screen and (min-width: 1200px) {
+  .inner {
+    width: 1100px;
+    margin: 0 auto;
+  }
+}
+
+
+/* TAB */
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .inner {
+    width: 97%;
+  }
+
+  .sec-inner {
+    display: block;
+    padding: 50px 0 25px;
+  }
+
+  .sec-text {
+    margin-top: 35px;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 20px;
+  }
+
+  .sec-inner-inner {
+    padding-top: 20px;
+  }
+
+  .art-img {
+    display: block;
+    margin-top: 0;
+    text-align: center;
+    font-size: 0;
+  }
+
+  .inner-list:first-child {
+    margin-top: 40px;
+  }
+
+  .inner-list {
+    margin-left: 0;
+  }
+
+  .inner-list:nth-child(n + 4) {
+    margin-top: 0;
+  }
+
+  .inner-list:nth-child(4n) {
+    margin-top: 80px;
+  }
+
+  .art-text {
+    display: block;
+    margin-top: 80px;
+  }
+
+  .art-text-inner {
+    margin: 0 auto;
+  }
+
+  .art-button {
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .skill-img {
+    display: block;
+  }
+
+  .skill-img-inner {
+    display: block;
+    margin-left: 0;
+    margin-top: 88px;
+    text-align: center;
+  }
+
+  .skill-img-inner:first-child {
+    margin-top: 0px;
+  }
+
+}
+
+
+/* SP */
+@media screen and (max-width: 767px) {
+  .inner {
+    width: 97%;
+  }
+
+  .button {
+
+  }
+  
+  .heading {
+    font-size: 80px;
+  }
+
+  .title-inner {
+    padding: 160px 0 130px;
+  }
+
+  .sec-inner {
+    display: block;
+  }
 }
